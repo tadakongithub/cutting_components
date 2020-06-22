@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN',Meiryo,"メイリオ",sans-serif;
+}
+
+/*デスクトップヘッダー1行目*/
+.header_first_row{
+    background-color: #f7f7f7;
+}
+
+.header_first_container{
+    max-width: 920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+}
+
+.header_first_left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.motto{
+    font-size: 10px;
+    color: #666666;
+}
+
+.header_first_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.page_title_top{
+    color: #004098;
+    text-align: center;
+    line-height: 0;
+    font-size: 2.5rem;
+    padding-top: 5px;
+}
+
+.page_title_bottom{
+    font-size: 15px;
+    color: #adadad;
+    text-align: center;
+    line-height: 0;
+    padding-bottom: 5px;
+}
+
+.header_first_right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header_left_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #004098;
+    font-weight: bold;
+}
+
+.header_left_item:hover{
+    opacity: .4;
+}
+
+.header_right_icon{
+    width: 20px;
+    height: 20px;
+}
+
+.apply{
+    display: block;
+    width: 70px;
+    height: 14px;
+    text-decoration: none;
+    color: #004098;
+    font-size: 14px;
+    line-height: 1em;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: #fff30d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.apply:hover{
+    background-color: #004098;
+    color: #fff;
+}
+
+/*デスクトップヘッダー2行め*/
+.header_second_container{
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 12px auto;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown:hover .dropdown_content{
+    display: block;
+}
+
+.dropdown_content{
+    display:none;
+    width: 100%;
+    position: absolute;
+    border: 1px solid #e5ecf4;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.02) 3px 3px;
+}
+
+.dropdown_content a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #004098;
+}
+
+.dropdown_content a:hover{
+    color: #b5bbd2;
+}
+
+a.dropdown_first{
+    border-bottom: 1px dotted #dfdfdf;
+    color: #b5bbd2;
+}
+
+a.dropdown_first:hover{
+    color: #004098;
+}
+
+.header_second_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #004098;
+    font: 13px/1.231 arial,helvetica,clean,sans-serif;
+    font-weight: bold;
+    border-left: 1px solid #f7f7f7;
+}
+
+.header_second_item:hover{
+    opacity: .4;
+}
+
+.header_second_item.last{
+    border-right: 1px solid #f7f7f7;
+}
+
+.header_second_text{
+    display: block;
+    margin: 5px;
+}
