@@ -3,6 +3,14 @@ body{
     font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN',Meiryo,"メイリオ",sans-serif;
 }
 
+/*グローバル*/
+.block{
+    display: block;
+}
+
+
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
 /*desktopヘッダー*/
 .header_desk_top{
     display: block;
@@ -13,6 +21,10 @@ body{
         display: none;
     }
 }
+
+
+
+
 
 /*デスクトップヘッダー1行目*/
 .header_first_row{
@@ -111,6 +123,10 @@ body{
     color: #fff;
 }
 
+
+
+
+
 /*デスクトップヘッダー2行め*/
 .header_second_row{
     border-bottom: 2px solid #dee4ed;
@@ -194,6 +210,10 @@ a.dropdown_first:hover{
     margin: 5px;
 }
 
+
+
+
+
 /*スクロール時表示するタブ*/
 .tabs_when_scrolled{
     position: fixed;
@@ -208,42 +228,77 @@ a.dropdown_first:hover{
     border-bottom: 2px solid #dee4ed;
 }
 
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
 /*spヘッダー*/
 .sp_header{
     display: none;
     margin: 0;
     padding: 0;
     height: 53px;
-    background-color: #adadad;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    transition: all .5s;
 }
 
+
+
+
+
+/*spヘッダー左側*/
 .sp_header_left{
     display: flex;
+    background-color: #fff;
 }
 
 .sp_header_title_container{
     flex: 1;
 }
 
+.sp_header_title_subcontainer{
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    text-align: center;
+}
+
 .sp_h1{
     font-size: 25px;
     line-height: 0;
     padding-bottom: 5px;
+    color: #004098;
 }
 
 .sp_h2{
     font-size: 15px;
     line-height: 0;
+    color: #adadad;
 }
 
 .sp_header_icon{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 56px;
     height: 53px;
     box-sizing: border-box;
 }
 
+.sp_header_icon.form{
+    background-color: #FFF30D;
+}
 
+.sp_header_icon.burger{
+    background-color: #004098;
+}
+
+.sp_header_icon img{
+    width: 30px;
+    height: 30px;
+}
 
 @media only screen and (max-width: 640px) {
     .sp_header{
@@ -251,6 +306,36 @@ a.dropdown_first:hover{
     }
 }
 
+
+
+
+
+/*spヘッダー、スワイプで出てくるナビゲーション*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 100%;
+    background-color: #004098; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: all 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
 /*スクロールできるようにダミー（あとで削除）*/
 .test{
     height: 1000px;

@@ -10,3 +10,15 @@ $(document).scroll(function() {
         $(tabs_when_scrolled).css('top', '-70px');
     }
 });
+
+$(document).ready(function() {
+    $('.burger').on('click', function() {
+        $('#mySideNav').css({'width':'100vw', 'left': '0'});
+        $('.sp_header').css('left', '-100%');
+    });
+
+    $('.closebtn').on('click', function() {
+        $('#mySideNav').css({'width':'0', 'left':'100%'});
+        $('.sp_header').css('left', '0');
+    });
+});
