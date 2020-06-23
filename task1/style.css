@@ -3,6 +3,17 @@ body{
     font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN',Meiryo,"メイリオ",sans-serif;
 }
 
+/*desktopヘッダー*/
+.header_desk_top{
+    display: block;
+}
+
+@media only screen and (max-width: 640px) {
+    .header_desk_top{
+        display: none;
+    }
+}
+
 /*デスクトップヘッダー1行目*/
 .header_first_row{
     background-color: #f7f7f7;
@@ -186,6 +197,7 @@ a.dropdown_first:hover{
 /*スクロール時表示するタブ*/
 .tabs_when_scrolled{
     position: fixed;
+    box-sizing: border-box;
     top: -70px;
     left: 0;
     width: 100%;
@@ -196,8 +208,50 @@ a.dropdown_first:hover{
     border-bottom: 2px solid #dee4ed;
 }
 
+/*spヘッダー*/
+.sp_header{
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 53px;
+    background-color: #adadad;
+}
+
+.sp_header_left{
+    display: flex;
+}
+
+.sp_header_title_container{
+    flex: 1;
+}
+
+.sp_h1{
+    font-size: 25px;
+    line-height: 0;
+    padding-bottom: 5px;
+}
+
+.sp_h2{
+    font-size: 15px;
+    line-height: 0;
+}
+
+.sp_header_icon{
+    display: block;
+    width: 56px;
+    height: 53px;
+    box-sizing: border-box;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    .sp_header{
+        display: block;
+    }
+}
+
+/*スクロールできるようにダミー（あとで削除）*/
 .test{
     height: 1000px;
 }
-
-/*スクロールできるように*/
