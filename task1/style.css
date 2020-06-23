@@ -109,7 +109,7 @@ body{
     max-width: 920px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 12px auto;
+    margin: 12px auto 0;
 }
 
 .dropdown{
