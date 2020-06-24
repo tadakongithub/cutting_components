@@ -3,9 +3,13 @@ body{
     font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN',Meiryo,"メイリオ",sans-serif;
 }
 
-/*グローバル*/
-.block{
-    display: block;
+/*グローバル（toggle用など)*/
+.opacity{
+    opacity: 0.4;
+}
+
+.display_none{
+    display: none;
 }
 
 
@@ -214,7 +218,7 @@ a.dropdown_first:hover{
 
 
 
-/*スクロール時表示するタブ*/
+/*デスクトップ　スクロール時表示するヘッダーのタブ*/
 .tabs_when_scrolled{
     position: fixed;
     box-sizing: border-box;
@@ -248,7 +252,7 @@ a.dropdown_first:hover{
 
 
 
-/*spヘッダー左側*/
+/*spヘッダー　バーガーメニュー押す前にトップに表示される部分*/
 .sp_header_left{
     display: flex;
     background-color: #fff;
@@ -310,9 +314,9 @@ a.dropdown_first:hover{
 
 
 
-/*spヘッダー、スワイプで出てくるナビゲーション*/
+/*spヘッダー、バーガーメニュー押したらスライドで出てくるナビゲーション*/
 .sidenav {
-    height: 100%; /* 100% Full-height */
+    /* height: 100%; */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -320,19 +324,121 @@ a.dropdown_first:hover{
     left: 100%;
     background-color: #004098; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
     transition: all 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+.sidenav_container{
+    margin: 5px 20px;
 }
 
+.close_btn_container{
+    text-align: right;
+}
 
+.closebtn {
+    font-size: 45px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sp_apply_btn{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff200;
+    color: #004098;
+}
+
+.sp_apply{
+    padding-left: 10px;
+}
+
+.sp_arrow{
+    padding-right: 10px;
+}
+
+.sidenav_ul{
+    color: #fff;
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+.sidenav_title{
+    height: 30px;
+    border-bottom: 1px solid rgba(238, 240, 246, .3);
+}
+
+.sidenav_title span{
+    font-size: 15px;
+}
+
+.sidenav_li{
+    width: 100%;
+}
+
+.sp_li_container{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(238, 240, 246, .3);
+}
+
+.sidenav_li span{
+    font-size: 20px;
+}
+
+.sp_dropdown{
+    display: none;
+    list-style-type: none;
+}
+
+.sp_dropdown_li{
+    height: 40px;
+    border-bottom: 1px solid rgba(238, 240, 246, .3);
+}
+
+.sp_dropdown_a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sp_dropdown_span_text{
+    padding-left: 10px;
+}
+
+.sp_dropdown_span_arrow{
+    padding-right: 10px;
+}
+
+.sp_header_icon_text_container{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sp_header_dropdown_icon{
+    display: block;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+}
 
 /*--------------------------------------------------*/
 /*--------------------------------------------------*/
