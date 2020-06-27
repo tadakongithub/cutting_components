@@ -6,7 +6,6 @@ body{
 
 
 .header_panel_container{
-    width: 90%;
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
@@ -341,7 +340,7 @@ body{
 
 
 /*sp ヘッダーパネル*/
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
     .header_panel_subcontainer{
         grid-template-columns: 1fr;
     }
@@ -365,12 +364,58 @@ body{
     column-gap: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+    .main_container{
+        display: block;
+        width: 95%;
+        margin: 8px auto;
+    }
+}
+
 .article_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 40px;
     margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .article_container{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0;
+        row-gap: 0;
+        border-top: 1px solid #e8eded;
+        border-left: 1px solid #e8eded;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar{
+        display: none;
+    }
+}
+
+.each_article.purple:hover{
+    transition: all .45s ease-out;
+    box-shadow: 7px 7px #a858b1;
+}
+
+.each_article.green:hover{
+    transition: all .45s ease-out;
+    box-shadow: 7px 7px #8bcb47;
+}
+
+.each_article.orange:hover{
+    transition: all .45s ease-out;
+    box-shadow: 7px 7px #edb816;
+}
+
+@media only screen and (max-width: 768px) {
+    .each_article{
+        border-right: 1px solid #e8eded;
+        border-bottom: 1px solid #e8eded;
+    }
 }
 
 .article_image_container{
@@ -398,7 +443,7 @@ body{
     height: 100%;
 }
 
-.article_bottom_box{
+/* .article_bottom_box{
     width: 100%;
     position: relative;
     background-color: #f3f6f6;
@@ -408,15 +453,18 @@ body{
     content: '';
     display: block;
     padding-top: 80%; 
-}
+} */
 
 .article_bottom{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: relative;
     padding: 15px 20px 25px;
+    background-color: #f3f6f6;
+}
+
+@media only screen and (max-width: 768px) {
+    .article_bottom{
+        background-color: #fff;
+    }
 }
 
 .hex_container.main{
@@ -425,9 +473,20 @@ body{
     left: 50%;
     transform: translateX(-50%);
     margin-left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .article_time{
     font-size: 11px;
     opacity: .45;
 }
+
+@media only screen and (max-width: 768px) {
+    .article_bottom h3{
+        font-size: 13px;
+    }
+}
+
+
+/*メインsp*/
