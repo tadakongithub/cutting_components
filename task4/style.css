@@ -1,0 +1,102 @@
+/*サービス*/
+body{
+    font-family: 'Open Sans', Arial, Roboto, "Droid Sans", "游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+.service_wrapper{
+    background-color: #efefef;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.service_container{
+    max-width: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 640px) {
+    .service_container{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*カード*/
+.service_card_container{
+    transition: all .1s;
+}
+
+.service_card_container:hover{
+    background-color: #e5e5e5;
+}
+
+.service_card{
+    margin: 5%;
+    padding-bottom: 18px;
+}
+
+/*カード上*/
+
+.service_img_container{
+    position: relative;
+    width: 100%;
+}
+
+.service_img_container:before{
+    content: '';
+    display: block;
+    padding-top: 65%;
+}
+
+.service_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.service_img img{
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+}
+
+.service_img_title{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    color: #fff;
+    background-color: #28B472;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*カード下*/
+.service_title{
+    width: 100%;
+    text-align: center;
+}
+
+.service_bottom_bar{
+    width: 40px;
+    margin: auto;
+    height: 2px;
+    background-color: #28B472;
+}
+
+.service_desc1{
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.service_desc2{
+    width: 100%;
+    text-align: center;
+}
