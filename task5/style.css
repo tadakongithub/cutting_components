@@ -6,6 +6,7 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    font-family: "游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",sans-serif;
 }
 
 .overlay{
@@ -22,7 +23,10 @@
 }
 
 .header{
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 3;
     background-color: #fff;
     margin: 0;
@@ -55,6 +59,131 @@
     align-items: center;
 }
 
+@media only screen and (max-width: 767px) {
+    .nav_container{
+        display: none;
+    }
+}
+
+/*pc*/
+/*モバイル*/
+
+.nav_container_mobile{
+    width: 70%;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav_container_mobile{
+        display: flex;
+    }
+}
+
+.hamburger{
+    display: block;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.patty{
+    display: block;
+    height: 2px;
+    width: 28px;
+    background-color: #707070;
+}
+
+.mobile_header{
+    display: block;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-100%);
+    transition: all .3s;
+}
+
+.mobile_header_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.mobile_lang{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile_btn{
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.close_btn{
+    font-size: 28px;
+}
+
+.mobile_header_section{
+    border-bottom: 1px solid #22819E;
+}
+
+.accordion_header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px;
+}
+
+.mobile_arrow{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #22819E;
+    border-bottom: 1px solid #22819E;
+    transform: translate(-5px, -3px) rotate(-45deg);
+    transition: all .3s;
+}
+
+.mobile_arrow_active{
+    transform: translate(-5px, -3px) rotate(-225deg);
+}
+
+.accordion_body{
+    display: none;
+}
+
+.accordion_ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: auto;
+}
+
+.accordion_li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+/*モバイル*/
+/*pc*/
+
 .nav_ul{
     list-style-type: none;
     margin: 0;
@@ -72,6 +201,9 @@
     line-height: 120px;
     text-align: center;
     position: relative;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-family: "futura-pt","游ゴシック体","Yu Gothic",YuGothic,sans-serif;
 }
 
 .li_bottom{
@@ -300,7 +432,7 @@
 .main{
     margin: 100px;
     display: flex;
-    height: 400px;
+    height: 2000px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
