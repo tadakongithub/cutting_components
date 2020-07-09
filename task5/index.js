@@ -37,4 +37,9 @@ $(document).ready(function() {
     $('.close_btn').on('click', function() {
         $('.mobile_header').css('transform', 'translateY(-100%)');
     });
-})
+
+    //カテゴリータグの表示・非表示
+    $('.category_tag_btn').on('click', function(){
+        $('.tag_list').toggleClass('scale_y_full');
+    });
+});
