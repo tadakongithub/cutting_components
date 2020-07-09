@@ -40,6 +40,6 @@ $(document).ready(function() {
 
     //カテゴリータグの表示・非表示
     $('.category_tag_btn').on('click', function(){
-        $('.tag_list').toggleClass('scale_y_full');
+        $('.tag_list_container').toggle(500);
     });
 });
