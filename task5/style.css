@@ -768,3 +768,145 @@
         font-size: 12px;
     }
 }
+
+.contact_container{
+    background-color: #22819E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 230px;
+    transition: background .3s;
+}
+
+.contact_container:hover{
+    background: transparent;
+}
+
+.contact{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./img/test.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity .3s;
+    z-index: 0;
+}
+
+.contact:hover{
+    opacity: 1;
+}
+
+.contact_container h3{
+    color: #fff;
+    z-index: 2;
+}
+
+.contact_container p{
+    color: #fff;
+    z-index: 2;
+}
+
+.bottom_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.bottom_menu_title{
+    margin-bottom: 1rem;
+}
+
+.bottom_menu_title a{
+    text-decoration: none;
+    color: #333;
+}
+
+.bottom_menu_ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom_menu_a{
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+.bottom_menu_extra{
+    align-self: flex-start;
+}
+
+.bottom_menu_extra h3{
+    margin-bottom: 1rem;
+}
+
+.bottom_menu_extra a{
+    text-decoration: none;
+    color: #333;
+}
+
+.bottom_menu_extra img{
+    margin-left: 10px;
+}
+
+.bottom_logo{
+    display: block;
+    width: 60px;
+    height: 50px;
+    align-self: flex-start;
+}
+
+.bottom_logo_container img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer_bottom{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.footer_bottom ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_bottom li{
+    margin-right: 40px;
+}
+
+.footer_nav_line{
+    padding-right: 40px;
+    border-right: 1px solid #e4e4e4;
+}
+
+.footer_bottom a{
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    letter-spacing: .1rem;
+}
+
+.marks{
+    display: flex;
+}
+
+.mark1{
+    margin-right: 30px;
+}
