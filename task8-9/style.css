@@ -14,6 +14,12 @@ body{
     padding-top: 56%; /* 高さを幅の75%に固定 */
 }
 
+@media only screen and (max-width: 768px){
+    .menu_aspect:before{
+        display: none;
+    }
+}
+
 .menu_container {
     position: absolute;
     top: 0;
@@ -26,15 +32,29 @@ body{
     justify-content: flex-end;
 }
 
+@media only screen and (max-width: 768px){
+    .menu_container{
+        position: static;
+        padding: 15vw 0;
+    }
+}
+
 .menu_inside_aspect {
     position: relative;
     width: 96%;
 }
 
+
 .menu_inside_aspect:before {
     content:"";
     display: block;
     padding-top: 36%; /* 高さを幅の75%に固定 */
+}
+
+@media only screen and (max-width: 768px){
+    .menu_inside_aspect:before{
+        display: none;
+    }
 }
 
 .menu_inside {
@@ -50,11 +70,25 @@ body{
     color: #fff;
 }
 
+@media only screen and (max-width: 768px){
+    .menu_inside{
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .todays_news{
     font-size: 1vw;
     margin-bottom: 1.1vw;
     font-family: Noto Sans,sans-serif;
     letter-spacing: .1em;
+}
+
+@media only screen and (max-width: 768px){
+    .todays_news{
+        font-size: 2.6vw;
+    }
 }
 
 .description_title{
@@ -64,10 +98,26 @@ body{
     letter-spacing: .1em;
 }
 
+@media only screen and (max-width: 768px){
+    .description_title{
+        font-size: 6.9vw;
+        margin-top: 0;
+    }
+}
+
 .the_description{
     font-size: 1vw;
     margin-bottom: 1.5vw;
+    line-height: 2;
     font-family: "ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic ProN,YuGothic,Arial,"メイリオ",Meiryo,sans-serif;
+}
+
+@media only screen and (max-width: 768px){
+    .the_description{
+        font-size: 3.2vw;
+        margin-bottom: 9vw;
+        padding-right: 15px;
+    }
 }
 
 .read_more_container{
@@ -81,9 +131,39 @@ body{
     padding: 5px 10px 5px 0;
 }
 
+@media only screen and (max-width: 768px){
+    .read_more_container{
+        display: none;
+    }
+}
+
+.sp_read_more_container{
+    display: none;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px 5px 0;
+}
+
+@media only screen and (max-width: 768px){
+    .sp_read_more_container{
+        display: flex;
+    }
+}
+
 .read_more{
     font-size: .92vw;
     font-family: "ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic ProN,YuGothic,Arial,"メイリオ",Meiryo,sans-serif;
+}
+
+@media only screen and (max-width: 768px){
+    .read_more{
+        font-size: 2.9vw;
+    }
 }
 
 .arrow_container{
@@ -107,6 +187,13 @@ body{
     padding-bottom: 10px;
 }
 
+@media only screen and (max-width: 768px){
+    .menu_stepshow{
+        width: 100%;
+        margin-bottom: 8vw;
+    }
+}
+
 .menu_stepshow::-webkit-scrollbar{
     background-color:transparent;
     height: 5px;
@@ -116,6 +203,12 @@ body{
     border-bottom: 1px solid #fff;
 }
 
+@media only screen and (max-width: 768px){
+    .menu_stepshow::-webkit-scrollbar{
+        display: none;
+    }
+}
+
 .each_menu_photo{
     display: block;
     text-decoration: none;
@@ -123,7 +216,14 @@ body{
     width: 31vw;
     height: 31vw;
     background: url(https://source.unsplash.com/random/700x700);
-    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 768px){
+    .each_menu_photo{
+        width: 66vw;
+        height: 66vw;
+    }
 }
 
 ::-webkit-scrollbar{
