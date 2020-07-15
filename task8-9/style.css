@@ -1,0 +1,136 @@
+body{
+    height: 1500px;
+}
+
+.menu_aspect {
+    position: relative;
+    width: 97%;
+    margin: auto 0 auto auto;
+}
+
+.menu_aspect:before {
+    content:"";
+    display: block;
+    padding-top: 56%; /* 高さを幅の75%に固定 */
+}
+
+.menu_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(./img/washi.png);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu_inside_aspect {
+    position: relative;
+    width: 96%;
+}
+
+.menu_inside_aspect:before {
+    content:"";
+    display: block;
+    padding-top: 36%; /* 高さを幅の75%に固定 */
+}
+
+.menu_inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    column-gap: 5%;
+    align-items: center;
+    color: #fff;
+}
+
+.todays_news{
+    font-size: 1vw;
+    margin-bottom: 1.1vw;
+    font-family: Noto Sans,sans-serif;
+    letter-spacing: .1em;
+}
+
+.description_title{
+    font-size: 2.4vw;
+    margin-bottom: 1.7vw;
+    font-family: "中ゴシックBBB{pm}",sans-serif;
+    letter-spacing: .1em;
+}
+
+.the_description{
+    font-size: 1vw;
+    margin-bottom: 1.5vw;
+    font-family: "ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic ProN,YuGothic,Arial,"メイリオ",Meiryo,sans-serif;
+}
+
+.read_more_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px 5px 0;
+}
+
+.read_more{
+    font-size: .92vw;
+    font-family: "ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic ProN,YuGothic,Arial,"メイリオ",Meiryo,sans-serif;
+}
+
+.arrow_container{
+    display: flex;
+}
+
+.arrow1, .arrow2{
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(-45deg);
+}
+
+.menu_stepshow{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.menu_stepshow::-webkit-scrollbar{
+    background-color:transparent;
+    height: 5px;
+  }
+
+.menu_stepshow::-webkit-scrollbar-track{
+    border-bottom: 1px solid #fff;
+}
+
+.each_menu_photo{
+    display: block;
+    text-decoration: none;
+    flex-shrink: 0;
+    width: 31vw;
+    height: 31vw;
+    background: url(https://source.unsplash.com/random/700x700);
+    margin-left: 5px;
+}
+
+::-webkit-scrollbar{
+    background-color:transparent;
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: #fff;
+  }
