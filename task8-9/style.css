@@ -257,13 +257,33 @@ footer{
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 768px){
+    .footer_top{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24vw;
+    }
+}
+
 .footer_nav{
     width: 48%;
+}
+
+@media only screen and (max-width: 768px){
+    .footer_nav{
+        width: 90%;
+    }
 }
 
 .footer_nav_title{
     font-size: 1vw;
     color: #fff;
+}
+
+@media only screen and (max-width: 768px){
+    .footer_nav_title{
+        font-size: 3.6vw;
+    }
 }
 
 .footer_nav_ul{
@@ -275,8 +295,23 @@ footer{
     padding: 0;
 }
 
+@media only screen and (max-width: 768px){
+    .footer_nav_ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
 .footer_nav_li{
     border-bottom: .07143vw solid #3d3735;
+}
+
+@media only screen and (max-width: 768px){
+    .footer_nav_li{
+        width: 100%;
+    }
 }
 
 .footer_nav_li.last{
@@ -295,6 +330,13 @@ footer{
 .footer_nav_each{
     font-size: .9vw;
     letter-spacing: .05em;
+}
+
+@media only screen and (max-width: 768px){
+    .footer_nav_each{
+        padding: 5vw 0;
+        font-size: 3.2vw;
+    }
 }
 
 .footer_nav_arrow_container{
@@ -326,10 +368,24 @@ footer{
     width: 48%;
 }
 
+@media only screen and (max-width: 768px){
+    .footer_contact{
+        width: 90%;
+
+    }
+}
+
 .footer_contact_title{
     font-size: 1vw;
     margin-bottom: 2.2vw;
     color: #fff;
+}
+
+@media only screen and (max-width: 768px){
+    .footer_contact_title{
+        font-size: 3.4vw;
+        margin-bottom: 8vw;
+    }
 }
 
 .to_form{
@@ -347,8 +403,21 @@ footer{
     color: #6c6c6c;
 }
 
+@media only screen and (max-width: 768px){
+    .contact_form_string{
+        padding: 7vw;
+        font-size: 2.9vw;
+    }
+}
+
 .contact_arrow_container{
     display: flex;
+}
+
+@media only screen and (max-width: 768px){
+    .contact_arrow_container{
+        margin-right: 7vw;
+    }
 }
 
 .contact_arrow1, .contact_arrow2{
@@ -365,6 +434,12 @@ footer{
     align-items: center;
 }
 
+@media only screen and (max-width: 768px){
+    .contact_logo{
+        width: 100%;
+    }
+}
+
 .logo_left{
     font-size: 1vw;
     color: #6c6c6c;
@@ -373,9 +448,37 @@ footer{
     margin-right: 3vw;
 }
 
+.sp_logo_left{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .logo_left{
+        display: none;
+    }
+
+    .sp_logo_left{
+        display: block;
+        margin-right: 4.4vw;
+        padding-right: 4.1vw;
+        border-right: .26vw solid #7e7e7e;
+        font-size: 2.6vw;
+        line-height: 6.1vw;
+        color: #6c6c6c;
+        letter-spacing: .1em;
+    }
+}
+
 .base_logo{
     width: 12vw;
     height: 2.4vw;
+}
+
+@media only screen and (max-width: 768px){
+    .base_logo{
+        width: 34vw;
+        height: 6.8vw;
+    }
 }
 
 .base_logo img{
@@ -389,11 +492,52 @@ footer{
     margin: 0 0 9.07143vw;
 }
 
+@media only screen and (max-width: 768px){
+    .footer_middle{
+        display: none;
+    }
+}
+
+.sp_sns_container{
+    width: 90%;
+    margin: 8vw;
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .sp_each_sns{
+        display: flex;
+        width: 5vw;
+        height: 5vw;
+        margin-right: 6.6vw;
+    }
+}
+
+
+
+.sp_each_sns img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px){
+    .footer_middle{
+        display: none;
+    }
+}
+
 .social_media{
     display: block;
     width: 1.4vw;
     height: 1.4vw;
     margin-right: 1.7vw;
+}
+
+@media only screen and (max-width: 768px){
+    .social_media{
+        width: 5.8vw;
+        height: 5.8vw;
+    }
 }
 
 .social_media img{
@@ -413,6 +557,14 @@ footer{
     height: 4vw;
 }
 
+@media only screen and (max-width: 768px){
+    .bottom_logo{
+        width: 28vw;
+        height: 13vw;
+        margin-bottom: 5.3vw;
+    }
+}
+
 .bottom_logo img{
     width: 100%;
     height: 100%;
@@ -422,4 +574,10 @@ footer{
     font-size: .7vw;
     text-align: center;
     color: #fff;
+}
+
+@media only screen and (max-width: 768px){
+    .copyright{
+        font-size: 2.3vw;
+    }
 }
