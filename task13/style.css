@@ -1,0 +1,28 @@
+.test img{
+    display: block;
+}
+
+.to_top{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #251E1C;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.to_top:hover{
+    background: #3F84B5;
+}
+
+.back_to_top_text{
+    font-size: 13px;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
+}
