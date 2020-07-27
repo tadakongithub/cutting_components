@@ -1,6 +1,19 @@
-.test img{
-    display: block;
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "游ゴシック体", YuGothic, "游ゴシック Medium", YuGothic,YuGothicM, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", Verdana, "メイリオ", Meiryo, sans-serif;
 }
+
+
+
+
+
+.dummy{
+    height: 1000px;
+    font-size: 3rem;
+}
+
+
+
+
 
 .to_top{
     display: block;
@@ -25,4 +38,141 @@
     font-family: brandon-grotesque, sans-serif;
     font-weight: 500;
     margin-top: 8px;
+}
+
+
+
+
+
+
+
+.footer_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2.5%;
+}
+
+@media only screen and (max-width: 480px){
+    .footer_nav{
+        padding-top: 0;
+    }
+}
+
+.footer_logo_pc{
+    width: 171px;
+    height: 88px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer_logo_pc{
+        display: none;
+    }
+}
+
+.footer_ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer_ul{
+        width: 100vw;
+        height: 56vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+}
+
+.footer_li{
+    border-left: 1px solid #251E1C;
+}
+
+.footer_li.first{
+    border: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .footer_li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: none;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .footer_li:nth-child(even){
+        border-left: 1px solid #EAEAEA;
+    }
+
+    .footer_li.last{
+        display: none;
+    }
+
+}
+
+.footer_a{
+    padding: 0 15px;
+    text-decoration: none;
+    color: #251E1C;
+    font-size: 15px;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+}
+
+.footer_logo_sp{
+    display: none;
+    width: 97px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer_logo_sp{
+        display: block;
+    }
+}
+
+.footer_address{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #251E1C;
+    letter-spacing: 0.1em;
+}
+
+.footer_address_br{
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+    .footer_address_br{
+        display: initial;
+    }
+}
+
+.copyright{
+    margin: 0;
+    color: #382628;
+    font-size: 11px;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+@media only screen and (max-width: 480px){
+    .copyright{
+        font-size: 0.625rem;
+    }
 }
