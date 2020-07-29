@@ -324,7 +324,7 @@ body{
 
 .slide_ul{
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 20px;
     padding: 0;
 }
 
@@ -370,6 +370,55 @@ body{
     font-size: 1.1rem;
     display: block;
     width: 100%;
+}
+
+
+.slide_consultation_booking{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.slide_bottom_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    background: #fff;
+    color: rgb(27, 161, 230);
+    padding: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.slide_bottom_button img{
+    width: 14px;
+    height: 14px;
+}
+
+.slide_bottom_button img{
+    font-size: 14px;
+}
+
+.slide_phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.slide_phone img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.slide_phone span{
+    font-size: 1.6rem;
 }
 
 .close_slide{
