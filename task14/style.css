@@ -16,16 +16,23 @@ body{
     width: 100%;
 }
 
+@media only screen and (max-width: 767px){
+    .pc_header{
+        display: none;
+    }
+}
+
 .logo_a{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 180px;
     height: 200px;
     background-color: #fff;
 }
 
 .logo_a img{
-    width: 100%;
-    height: 100%;
+    width: 100px;
 }
 
 
@@ -170,3 +177,204 @@ body{
     transform: rotate(-45deg);
 }
 
+
+
+
+
+
+.sp_header{
+    display: none;
+}
+
+@media only screen and (max-width: 767px){
+    .sp_header{
+        display: block;
+    }
+}
+
+.sp_header_top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sp_header_top_left{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sp_top_logo{
+    width: 40px;
+}
+
+.sp_header_top_right{
+    display: flex;
+    text-decoration: none;
+}
+
+.sp_top_right_square{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+
+.sp_top_right_square img{
+    width: 14px;
+    height: 14px;
+}
+
+.sp_top_right_square span{
+    color: #1ba1e6;
+    font-size: 0.8rem;
+}
+
+
+
+
+.sp_header_bottom{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.consul_book_container{
+    flex: 1;
+    display: flex;
+}
+
+.bottom_button{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.bottom_button.consultation{
+    background: #1ba1e6;
+}
+
+.bottom_button.booking{
+    background: #82c7e6;
+}
+
+.bottom_button img{
+    width: 32px;
+    height: 32px;
+}
+
+.bottom_button span{
+    font-size: 14px;
+}
+
+.burger{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger_border{
+    height: 2px;
+    background: #1ba1e6;
+    width: 30px;
+    margin-bottom: 8px;
+}
+
+.burger_border.bottom{
+    margin: 0;
+}
+
+
+
+
+.slide_menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100%;/*100%*/
+    width: 100%;
+    background: #1ba1e6;
+}
+
+.slide_content_container{
+    margin: 20px 20px 0;
+}
+
+.slide_logo{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.slide_ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slide_li{
+    border-bottom: 1px solid #49b4eb;
+}
+
+.main_li{
+    display: flex;
+    align-items: center;
+}
+
+.slide_a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    flex: 1;
+}
+
+.show_hidden_submenu, .hide_shown_submenu{
+    width: 30px;
+    height: 30px;
+}
+
+.hide_shown_submenu{
+    display: none;
+}
+
+.hidden_ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.hidden_a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    font-size: 1.1rem;
+    display: block;
+    width: 100%;
+}
+
+.close_slide{
+    position: absolute;
+    width: 20px;
+    right: 20px;
+    bottom: 20px;
+}
