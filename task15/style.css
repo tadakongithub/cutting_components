@@ -8,6 +8,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
 }
 
 @media only screen and (max-width: 767px) {
