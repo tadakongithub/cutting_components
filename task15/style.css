@@ -10,9 +10,26 @@ body{
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 767px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .information-container, .schedule-container{
     width: 48%;
     box-sizing: border-box;
+}
+
+@media only screen and (max-width: 767px) {
+    .information-container, .schedule-container{
+        width: 90%;
+    }
+
+    .information-container{
+        margin-bottom: 40px;
+    }
 }
 
 .information-title{
