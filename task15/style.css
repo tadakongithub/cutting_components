@@ -1,0 +1,108 @@
+
+
+body{
+    font-family: 'Noto Sans JP', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro",  "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information-container, .schedule-container{
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.information-title{
+    margin: 0;
+    margin-bottom: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    color: #1ba1e6;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.information-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.information-li{
+
+}
+
+.information-a{
+    text-decoration: none;
+    color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 19px 0;
+    border-bottom: 1px solid #E1E5E7;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.information-each{
+    display: block;
+    margin-left: 25px;
+}
+
+
+.schedule-top{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.schedule-title{
+    margin: 0;
+    margin-bottom: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    color: #1ba1e6;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.off-calender{
+    display: block;
+    padding: 12px 20px;
+    background: #1ba1e6;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 2em;
+    line-height: 2;
+    font-size: 16px;
+}
+
+
+.schedule_middle{
+    margin-bottom: 1em;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    padding: 10px;
+    border-right: 1px solid #e1e5e7;
+    text-align: center;
+    font-size: 16px;
+}
+
+#morning-time, #afternoon-time{
+    text-align: left;
+    padding-left: 0;
+}
+
+.schedule_bottom{
+    width: 100%;
+    text-align: right;
+}
