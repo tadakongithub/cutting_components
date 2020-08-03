@@ -5,6 +5,9 @@ body{
 
 .contact-title{
     padding: 50px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .contact-top{
@@ -21,9 +24,26 @@ body{
     letter-spacing: 0.15em;
 }
 
+@media only screen and (max-width: 767px){
+    .contact-bottom{
+        font-size: 1.3rem;
+    }
+}
+
 
 .ftr-consul-book-container{
     display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 968px){
+    .ftr-consul-book-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .ftr-consul, .ftr-book{
@@ -41,12 +61,24 @@ body{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 968px){
+    .ftr-consul, .ftr-book{
+        width: 96%;
+    }
+}
+
 .ftr-consul{
     background-color: #1ba1e6;
 }
 
 .ftr-consul:hover{
     opacity: 0.6;
+}
+
+@media only screen and (max-width: 968px){
+    .ftr-consul{
+        margin-bottom: 1em;
+    }
 }
 
 .ftr-book{
@@ -67,10 +99,17 @@ body{
     line-height: 1;
 }
 
+@media only screen and (max-width: 767px){
+    .ftr-consul-str, .ftr-book-str{
+        font-size: 1.2rem;
+    }
+}
+
 
 
 .page-bottom{
     max-width: 1200px;
+    width: 100%;
     margin: auto;
     padding: 50px 0;
 }
@@ -78,6 +117,14 @@ body{
 .page-bottom-top{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 968px){
+    .page-bottom-top{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .bottom-info{
@@ -87,8 +134,21 @@ body{
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 968px){
+    .bottom-info{
+        margin-bottom: 30px;
+        width: 96%;
+    }
+}
+
 .bottom-logo{
     width: 30%;
+}
+
+@media only screen and (max-width: 968px){
+    .bottom-logo{
+        width: 20%;
+    }
 }
 
 .bottom-logo img{
@@ -100,12 +160,24 @@ body{
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 767px){
+    .bottom-general-info{
+        width: 75%;
+    }
+}
+
 .bottom-general-info dt{
     margin-bottom: 1em;
 }
 
 .bottom-general-info dt img{
     width: 100%;
+}
+
+@media only screen and (max-width: 968px){
+    .bottom-general-info dt img{
+        width: 80%;
+    }
 }
 
 .bottom-address{
@@ -132,6 +204,12 @@ body{
     font-size: 1.8rem;
 }
 
+@media only screen and (max-width: 767px){
+    .bottom-tel span{
+        font-size: 1.6rem;
+    }
+}
+
 dd{
     margin-left: 0;
 }
@@ -141,6 +219,12 @@ dd{
 
 .bottom-calender{
     width: 46%;
+}
+
+@media only screen and (max-width: 968px){
+    .bottom-calender{
+        width: 96%;
+    }
 }
 
 .map-calender-container{
@@ -166,6 +250,15 @@ dd{
     border-radius: 2em;
     transition: all 0.3s;
 }
+
+@media only screen and (max-width: 767px){
+    .map, .off-calender{
+        padding: 8px 8px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
+
 
 .map:hover, .off-calender:hover{
     opacity: 0.7;
@@ -197,9 +290,44 @@ td, th{
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 968px){
+    .page-bottom-bottom{
+        display: block;
+        position: relative;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .page-bottom-bottom{
+        margin-top: 30px;
+        width: 96%;
+        margin: auto;
+    }
+}
+
 .copyright{
     font-size: 0.8rem;
     line-height: 2;
+}
+
+@media only screen and (max-width: 968px){
+    .ftr-links-ul{
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .copyright{
+        position: absolute;
+        bottom: 0;
+        margin-top: 1em;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .ftr-links-ul{
