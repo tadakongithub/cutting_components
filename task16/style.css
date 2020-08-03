@@ -164,6 +164,11 @@ dd{
     align-items: center;
     justify-content: center;
     border-radius: 2em;
+    transition: all 0.3s;
+}
+
+.map:hover, .off-calender:hover{
+    opacity: 0.7;
 }
 
 .bottom-calender-small{
@@ -214,6 +219,11 @@ td, th{
     padding: 0 10px;
     border-right: 1px solid #444;
     color: #444;
+    transition: all 0.3s;
+}
+
+.ftr-links-a:hover{
+    opacity: 0.7;
 }
 
 .ftr-links-a.second{
