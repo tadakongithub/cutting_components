@@ -1,27 +1,50 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
     </head>
 
 
     <body>
         <div class="container">
-            <div class="slide_container">
-                <div class="each_slide">
-                    <img src="./img/slide1.jpg" alt="image1">
-                </div>
-                <div class="each_slide">
-                    <img src="./img/slide2.jpg" alt="image1">
-                </div>
-                <div class="each_slide">
-                    <img src="./img/slide3.jpg" alt="image1">
+            <div class="carousel-container">
+                <div class="carousel-slider">
+                    <img src="./img/slide4.jpg" alt="">
+                    <img src="./img/slide1.jpg" alt="">
+                    <img src="./img/slide2.jpg" alt="">
+                    <img src="./img/slide3.jpg" alt="">
+                    <img src="./img/slide4.jpg" alt="" id="lastImage">
                 </div>
             </div>
-            <div class="panel"></div>
-        </div>
 
-    
+            
+            <div class="yellow-service">
+                <h2 class="yellow-title">SERVICE</h2>
+
+                <div class="service-type-container">
+                    <div class="service-type">
+                        <h3>指輪</h3>
+                        <p>これは指輪の写真です</p>
+                    </div>
+                    <div class="service-type">
+                        <h3>卒業式</h3>
+                        <p>これは卒業式の写真です</p>
+                    </div>
+                    <div class="service-type">
+                        <h3>アート</h3>
+                        <p>これはアートの写真です</p>
+                    </div>
+                    <div class="service-type">
+                        <h3>車</h3>
+                        <p>これは車の写真です</p>
+                    </div>
+                </div>
+
+                <a href="#" class="more-button">MORE</a>
+            </div>
+        </div>
+        
+
+    <script src="index.js"></script>
     </body>
 </html>
