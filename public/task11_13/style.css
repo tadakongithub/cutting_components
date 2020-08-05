@@ -9,6 +9,10 @@
     letter-spacing: 0.1em;
 }
 
+body{
+    transition: all 0.5s;
+}
+
 .container{
     width: 100%;
     max-width: 1200px;

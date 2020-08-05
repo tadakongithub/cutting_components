@@ -1,3 +1,4 @@
+//サービスの表示切り替え
 const imageSlider = document.querySelector('.carousel-slider');
 const images = document.querySelectorAll('.carousel-slider img');
 const serviceDescriptions = document.querySelectorAll('.service-type');
@@ -34,9 +35,12 @@ imageSlider.addEventListener('transitionend', ()=>{
 
 
 
-
-$(document).ready(function(){
-  $('.to_top').on('click', function(e){
-      $('body, html').animate({'scrollTop': 0}, 500);
+//ページトップへ戻る
+const button = document.querySelector('.to_top');
+button.addEventListener('click', ()=>{
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
   });
 });
