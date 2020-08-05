@@ -1,0 +1,452 @@
+body{
+    margin: 0;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN',Meiryo,"メイリオ",sans-serif;
+}
+
+/*グローバル（toggle用など)*/
+.opacity{
+    opacity: 0.4;
+}
+
+.display_none{
+    display: none;
+}
+
+
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*desktopヘッダー*/
+.header_desk_top{
+    display: block;
+}
+
+@media only screen and (max-width: 640px) {
+    .header_desk_top{
+        display: none;
+    }
+}
+
+
+
+
+
+/*デスクトップヘッダー1行目*/
+.header_first_row{
+    background-color: #f7f7f7;
+}
+
+.header_first_container{
+    max-width: 920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+}
+
+.header_first_left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.motto{
+    font-size: 10px;
+    color: #666666;
+}
+
+.header_first_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.page_title_top{
+    color: #004098;
+    text-align: center;
+    line-height: 0;
+    font-size: 2.5rem;
+    padding-top: 5px;
+}
+
+.page_title_bottom{
+    font-size: 15px;
+    color: #adadad;
+    text-align: center;
+    line-height: 0;
+    padding-bottom: 5px;
+}
+
+.header_first_right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header_left_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #004098;
+    font-weight: bold;
+}
+
+.header_left_item:hover{
+    opacity: .4;
+}
+
+.header_right_icon{
+    width: 20px;
+    height: 20px;
+}
+
+.apply{
+    display: block;
+    width: 70px;
+    height: 14px;
+    text-decoration: none;
+    color: #004098;
+    font-size: 14px;
+    line-height: 1em;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: #fff30d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.apply:hover{
+    background-color: #004098;
+    color: #fff;
+}
+
+
+
+
+
+/*デスクトップヘッダー2行め*/
+.header_second_row{
+    border-bottom: 2px solid #dee4ed;
+}
+
+.header_second_container{
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 12px auto 0;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown:hover .dropdown_content{
+    display: block;
+}
+
+.dropdown_content{
+    display:none;
+    width: 100%;
+    position: absolute;
+    border: 1px solid #e5ecf4;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.02) 3px 3px;
+}
+
+.dropdown_content a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #004098;
+}
+
+.dropdown_content a:hover{
+    color: #b5bbd2;
+}
+
+a.dropdown_first{
+    border-bottom: 1px dotted #dfdfdf;
+    color: #b5bbd2;
+}
+
+a.dropdown_first:hover{
+    color: #004098;
+}
+
+.header_second_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #004098;
+    font: 13px/1.231 arial,helvetica,clean,sans-serif;
+    font-weight: bold;
+    border-left: 1px solid #f7f7f7;
+}
+
+.header_second_item:hover{
+    opacity: .4;
+}
+
+.header_second_item.last{
+    border-right: 1px solid #f7f7f7;
+}
+
+.header_second_text{
+    display: block;
+    margin: 5px;
+}
+
+
+
+
+
+/*デスクトップ　スクロール時表示するヘッダーのタブ*/
+.tabs_when_scrolled{
+    position: fixed;
+    box-sizing: border-box;
+    top: -70px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    border-bottom: 2px solid #dee4ed;
+}
+
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*spヘッダー*/
+.sp_header{
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 53px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    transition: all .5s;
+}
+
+
+
+
+
+/*spヘッダー　バーガーメニュー押す前にトップに表示される部分*/
+.sp_header_left{
+    display: flex;
+    background-color: #fff;
+}
+
+.sp_header_title_container{
+    flex: 1;
+}
+
+.sp_header_title_subcontainer{
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    text-align: center;
+}
+
+.sp_h1{
+    font-size: 25px;
+    line-height: 0;
+    padding-bottom: 5px;
+    color: #004098;
+}
+
+.sp_h2{
+    font-size: 15px;
+    line-height: 0;
+    color: #adadad;
+}
+
+.sp_header_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 53px;
+    box-sizing: border-box;
+}
+
+.sp_header_icon.form{
+    background-color: #FFF30D;
+}
+
+.sp_header_icon.burger{
+    background-color: #004098;
+}
+
+.sp_header_icon img{
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 640px) {
+    .sp_header{
+        display: block;
+    }
+}
+
+
+
+
+
+/*spヘッダー、バーガーメニュー押したらスライドで出てくるナビゲーション*/
+.sidenav {
+    /* height: 100%; */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 100%;
+    overflow: scroll;
+    background-color: #004098; /* Black*/
+    transition: all 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav_container{
+    margin: 5px 20px;
+}
+
+.close_btn_container{
+    text-align: right;
+}
+
+.closebtn {
+    font-size: 45px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sp_apply_btn{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff200;
+    color: #004098;
+}
+
+.sp_apply{
+    padding-left: 10px;
+}
+
+.sp_arrow{
+    padding-right: 10px;
+}
+
+.sidenav_ul{
+    color: #fff;
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+.sidenav_title{
+    height: 30px;
+    border-bottom: 1px solid rgba(238, 240, 246, .3);
+}
+
+.sidenav_title span{
+    font-size: 15px;
+}
+
+.sidenav_li{
+    width: 100%;
+}
+
+.sp_li_container{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(238, 240, 246, .3);
+}
+
+.sidenav_li span{
+    font-size: 17px;
+}
+
+.sp_dropdown{
+    display: none;
+    list-style-type: none;
+}
+
+.sp_dropdown_li{
+    height: 40px;
+    border-bottom: 1px solid rgba(238, 240, 246, .3);
+}
+
+.sp_dropdown_a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sp_dropdown_span_text{
+    padding-left: 10px;
+}
+
+.sp_dropdown_span_arrow{
+    padding-right: 10px;
+}
+
+.sp_header_icon_text_container{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sp_header_dropdown_icon{
+    display: block;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+}
+
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*スクロールできるようにダミー（あとで削除）*/
+.test{
+    height: 1000px;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
