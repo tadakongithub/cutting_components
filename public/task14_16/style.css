@@ -558,8 +558,47 @@ th, td{
 }
 
 
+.side-ul{
+    position: fixed;
+    right: 0px;
+    top: 210px;
+    z-index: 10;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
+.side-a{
+    writing-mode: vertical-rl;
+    width: 60px;
+    height: 160px;
+    padding: 5px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0px;
+    box-sizing: border-box;;
+}
 
+.side-a.consultation{
+    background: #1ba1e6;
+    top: 0;
+}
+
+.side-a.booking{
+    top: 160px;
+    background: #82c7e6;
+}
+
+.side-a img{
+    width: 32px;
+}
 
 /*task16*/
 .contact-title{
