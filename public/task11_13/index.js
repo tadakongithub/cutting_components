@@ -1,46 +1,38 @@
-//サービスの表示切り替え
-const imageSlider = document.querySelector('.carousel-slider');
-const images = document.querySelectorAll('.carousel-slider img');
-const serviceDescriptions = document.querySelectorAll('.service-type');
+$(document).ready(function(){
+  let imagesLoaded = 0;
+  const totalImages = $('.slideImage').length;
+  const sliderDescs = $('.service-type');
 
-let counter = 1;
-const size = images[0].clientWidth;
+  $('.slideImage').on('load', function(){
+    imagesLoaded++;
+    if(imagesLoaded == totalImages){
+      const width = $(this).width();
+      let counter = 1;
+      //slider
+      $('.carousel-slider').css('transform', 'translateX(' + (-width * counter) + 'px)');
+      //text change
+      $(`.service-type:eq(${counter-1})`).css('opacity', '1');
+      setInterval(()=>{
+        counter++;
+        //slider
+        $('.carousel-slider').css('transition', 'all 1s ease-in-out');
+        $('.carousel-slider').css('transform', 'translateX(' + (-width * counter) + 'px)');
+        //text change
+        $(`.service-type:eq(${counter-2})`).css('opacity', '0');
+        $(`.service-type:eq(${counter-1})`).css('opacity', '1');
+      },4000);
 
-imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
-serviceDescriptions[counter-1].style.opacity = "1";
+      $('.carousel-slider').on('transitionend webkitTransitionEnd oTransitionEnd', function(){
+        if(counter == totalImages - 1){
+          $(this).css('transition', 'none');
+          counter = 0;
+          $('.carousel-slider').css('transform', 'translateX(' + (-width * counter) + 'px)');
+        }
+      });
+    }
+  });
 
-setInterval(()=>{
-  counter++;
-  //slider
-  imageSlider.style.transition = 'all 1s ease-in-out';
-  imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
-  //service description change
-  if(counter === 1){
-    serviceDescriptions[serviceDescriptions.length-1].style.opacity = '0';
-    serviceDescriptions[counter - 1].style.opacity = '1';
-  }
-  if(counter !== 1){
-    serviceDescriptions[counter-2].style.opacity = '0';
-    serviceDescriptions[counter-1].style.opacity = '1';
-  }
-}, 4000);
-
-imageSlider.addEventListener('transitionend', ()=>{
-  if(images[counter].id === 'lastImage'){
-    imageSlider.style.transition = 'none';
-    counter = 0;
-    imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
-  }
-});
-
-
-
-//ページトップへ戻る
-const button = document.querySelector('.to_top');
-button.addEventListener('click', ()=>{
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth'
+  $('.to_top').on('click', function(){
+    $('html, body').animate({'scrollTop': 0}, 1000);
   });
 });
