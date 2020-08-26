@@ -1,86 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>各パーツのコーディング</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>各パーツのコーディング業務をまとめたポートフォリオ</h1>
-    <p>ウェブ制作会社であるクライアントさんがワードプレスのテーマ制作を計画していて、そのテーマのパーツのデザインを元に、コーディング作業を行った。</p>
-    <ul>
-        <li>
-            <a href="./task1/index.html">パーツ１</a>
-            <div>部分：グローバルナビゲーション</div>
-            <div>特徴：spナビゲーションのスライド、クリック時の表示・非表示</div>
-            <div>
-                <img src="./img/css.png" alt="">
-                <img src="./img/jquery.png" alt="">
-            </div>
-        </li>
-        <li>
-            <a href="./task2_3/index.html">パーツ２−３</a>
-            <div>部分：ニュース見出しの一覧</div>
-            <div>特徴：ホバー時の外枠のアニメーション、バナーの左右を三角に</div>
-            <div>
-                <img src="./img/css.png" alt="">
-            </div>
-        </li>
-        <li>
-            <a href="./task4/index.html">パーツ４</a>
-            <div>部分：サービス一覧</div>
-            <div>特徴：なし</div>
-            <div>
-                <img src="./img/css.png" alt="">
-            </div>
-        </li>
-        <li>
-            <a href="./task5_7/index.html">パーツ５−７</a>
-            <div>部分：グローバルナビゲーション、ニュース記事一覧、フッター</div>
-            <div>特徴：ヘッダーナビゲーションホバー時のアニメーション</div>
-            <div>
-                <img src="./img/css.png" alt="">
-                <img src="./img/jquery.png" alt="">
-            </div>
-        </li>
-        <li>
-            <a href="./task8_9/index.html">パーツ８−９</a>
-            <div>部分：レシピ紹介セクション、フッター</div>
-            <div>特徴：スライダーは、スクロールバーをうごがしても、スライダー自体を掴んで動かしてもスライドさせることができる。</div>
-            <div>
-                <img src="./img/css.png" alt="">
-                <img src="./img/js.png" alt="">
-            </div>
-        </li>
-        <li>
-            <a href="./task10/index.html">パーツ１０</a>
-            <div>部分：グローバルヘッダー</div>
-            <div>特徴：左上の斜めの点線、sp時のトグル、ホバー時サブメニューの表示</div>
-            <div>
-                <img src="./img/css.png" alt="">
-                <img src="./img/jquery.png" alt="">
-            </div>
-        </li>
-        <li>
-            <a href="./task11_13/index.html">パーツ１１−１３</a>
-            <div>部分：サービス一覧、フッター</div>
-            <div>特徴：スライダーとサービス名の表示を４秒ごとに切り替える（Vanilla JS)。</div>
-            <div>
-                <img src="./img/css.png" alt="">
-                <img src="./img/jquery.png" alt="">
-            </div>
-        </li>
-        <li>
-            <a href="./task14_16/index.html">パーツ１４−１６</a>
-            <div>部分：グローバルナビゲーション、スケジュール表、フッターなど</div>
-            <div>特徴：sp時のグローバルナビゲーション</div>
-            <div>
-                <img src="./img/css.png" alt="">
-                <img src="./img/jquery.png" alt="">
-            </div>
-        </li>
-    </ul>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.19.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.19.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.19.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.19.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.19.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
